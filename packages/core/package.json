@@ -1,0 +1,59 @@
+{
+  "name": "fnaudiofx",
+  "version": "0.1.0",
+  "description": "Audio effects as AudioWorklet processors in pure TypeScript. No WASM, no native deps.",
+  "keywords": [
+    "audio",
+    "audioworklet",
+    "web-audio",
+    "effects",
+    "reverb",
+    "delay",
+    "distortion",
+    "bitcrusher",
+    "dsp"
+  ],
+  "license": "MIT",
+  "author": "fnrhombus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fnrhombus/fnaudiofx"
+  },
+  "bugs": {
+    "url": "https://github.com/fnrhombus/fnaudiofx/issues"
+  },
+  "homepage": "https://github.com/fnrhombus/fnaudiofx#readme",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0"
+  }
+}

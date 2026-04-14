@@ -1,0 +1,12 @@
+{
+  "name": "fnaudiofx-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "fnaudiofx": "workspace:*",
+    "vitest": "^3.1.0"
+  }
+}
